@@ -12,6 +12,8 @@ public class Main {
         Loader rv = new Loader();
         rv.start();
 
+//        rv.start();  gives illegal thread class error
+
 /*      note: below method calling can be used to call Runnable interface thread also but it's not possible
         to use the above method is not applicable for Runnable interface thread.*/
 
