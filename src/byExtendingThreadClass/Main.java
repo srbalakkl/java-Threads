@@ -1,9 +1,9 @@
 package byExtendingThreadClass;
 
-class Loader extends Thread{
+class Loader extends Thread {
     @Override
     public void run() {
-        System.out.println("hello");
+        System.out.println("hello from loader class");
     }
 }
 
@@ -19,5 +19,16 @@ public class Main {
 
 /*        Thread rv = new Thread(new Loader());
         rv.start();*/
+
+        new Thread() {
+            @Override
+            public void run() {
+                System.out.println("hello from anonymous class");
+                System.out.println("hello from anonymous class"+currentThread().getName());
+            }
+        }.start();
+
+
+        System.out.println("hello from main");
     }
 }
