@@ -6,7 +6,7 @@ class Loader implements Runnable {
     public void run() {
 //    currentThread().getName() -> to get a name of current thread
 
-//        System.out.println("hello from ->" + currentThread().getName());
+        System.out.println("hello from ->" + currentThread().getName());
 //        try {
 //            System.out.println("hi i'm a from try block \n");
 //            Thread.sleep(3000);
