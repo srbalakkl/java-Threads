@@ -25,7 +25,7 @@ public class Main {
         System.out.println("from main mtd.");
         Thread rv = new Thread(new Loader());
 //        changing default name of thread
-        rv.setName(" ==Loader Thread==");
+        rv.setName(" ==Loader Thread== ");
         rv.start();
         rv.interrupt();
         System.out.println("hello again from main");
