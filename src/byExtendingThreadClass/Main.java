@@ -18,6 +18,7 @@ public class Main {
         to use the above method is not applicable for Runnable interface thread.*/
 
 /*        Thread rv = new Thread(new Loader());
+
         rv.start();*/
 
         new Thread() {
